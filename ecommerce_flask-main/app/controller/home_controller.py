@@ -4,7 +4,7 @@ from app.model.product import Product
 
 home_bp = Blueprint('home', __name__)
 
-categories = [Category(1, "Eletrônicos"), Category(2, "Livros"), Category(3, "Outros")]
+categories = [Category(1, "Ferragens para Construção"), Category(2, "Ferragens para Fixação e Fontagem"), Category(3, "Ferragens para Janelas"), Category(4,"Ferragens para Segurança")]
 products = [
     Product(1, "Câmera", 1200.00, 1, "Câmera digital de alta resolução.", [
         "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
