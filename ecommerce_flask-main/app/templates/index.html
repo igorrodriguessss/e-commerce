@@ -15,34 +15,49 @@
         <img src="../static/img/xitsnai.png" alt="Promoção Especial">
         <button>Compre Agora!</button>
     </section>
-    <h1>Bem-vindo à Melhor !</h1>
+    <h1>Bem-vindo à Melhor Loja!</h1>
     
-    <div class="categories">
-        <h2>Categorias</h2>
-        <div class="categories-grid">
-            {% for category in categories %}
-            <div class="category-item">
-                <a href="{{ url_for('product.list_products_by_category', category_id=category.id) }}">{{ category.name }}</a>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Opções</h2>
+            <ul>
+                <li><a href="#opcao1">Opção 1</a></li>
+                <li><a href="#opcao2">Opção 2</a></li>
+                <li><a href="#opcao3">Opção 3</a></li>
+                <!-- Adicione mais opções conforme necessário -->
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="categories">
+                <h2>Categorias</h2>
+                <div class="categories-grid">
+                    {% for category in categories %}
+                    <div class="category-item">
+                        <a href="{{ url_for('product.list_products_by_category', category_id=category.id) }}">{{ category.name }}</a>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
-            {% endfor %}
-        </div>
-    </div>
-    
-    <h2>Produtos em Destaque</h2>
-    <div class="product-grid">
-        {% for product in products %}
-        <div class="product-item">
-            <img src="{{ product.images[0] }}" alt="{{ product.name }}" class="product-image">
-            <h3>{{ product.name }}</h3>
-            <p>Preço: ${{ product.price }}</p>
-            <p>{{ product.description }}</p>
-            <a href="{{ url_for('product.product_detail', product_id=product.id) }}">Ver Detalhes</a>
-            <form action="{{ url_for('cart.add_to_cart', product_id=product.id) }}" method="POST">
-                <input type="number" name="quantity" value="1" min="1">
-                <button type="submit">Adicionar ao Carrinho</button>
-            </form>
-        </div>
-        {% endfor %}
+            
+            <h2>Produtos em Destaque</h2>
+            <div class="product-grid">
+                {% for product in products %}
+                <div class="product-item">
+                    <a href="{{ url_for('product.product_detail', product_id=product.id) }}">
+                        <img src="{{ product.images[0] }}" alt="{{ product.name }}" class="product-image">
+                        <h3>{{ product.name }}</h3>
+                        <p>Preço: ${{ product.price }}</p>
+                        <p>{{ product.description }}</p>
+                    </a>
+                    <form action="{{ url_for('cart.add_to_cart', product_id=product.id) }}" method="POST">
+                        <input type="number" name="quantity" value="1" min="1">
+                        <button type="submit">Adicionar ao Carrinho</button>
+                    </form>
+                </div>
+                {% endfor %}
+            </div>
+        </main>
     </div>
     
     <footer>

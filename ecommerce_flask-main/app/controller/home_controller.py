@@ -6,12 +6,12 @@ home_bp = Blueprint('home', __name__)
 
 categories = [Category(1, "Ferragens para Construção"), Category(2, "Ferragens para Fixação e Fontagem"), Category(3, "Ferragens para Janelas"), Category(4,"Ferragens para Segurança")]
 products = [
-    Product(1, "Câmera", 1200.00, 1, "Câmera digital de alta resolução.", [
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg",
-        "https://blog.bbbaterias.com.br/wp-content/uploads/2018/06/205868-tipos-de-camera-fotografica-qual-devo-escolher-1023x640.jpg"
+    Product(1, "Estribo Aço CA 60 4,20mm 7x27cm", 1200.00, 1, "Câmera digital de alta resolução.", [
+        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
+        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
+        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
+        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
+        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg"
     ]),
     Product(2, "Livro de Python", 45.00, 2, "Aprenda Python facilmente.", [
         "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
