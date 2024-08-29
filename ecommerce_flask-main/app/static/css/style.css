@@ -44,14 +44,14 @@ header input[type="text"] {
 }
 
 #featured-products {
-    padding: 20px;
+    padding: 10px;
     background: white;
     margin-top: 20px;
 }
 
 #featured-products h2 {
     color: #333;
-    text-align: center;
+    text-align:right;
     margin-bottom: 20px;
 }
 
@@ -89,7 +89,7 @@ footer {
 
 /* Barra lateral */
 .sidebar {
-    width: 15%;
+    width: 10%;
     padding: 10px;
     background-color: #f4f4f4;
 }
@@ -120,16 +120,16 @@ footer {
 
 /* Conteúdo principal */
 .main-content {
-    width: 80%;
+    width: 100%;
     padding: 10px;
 }
 
 /* Grid de categorias e produtos */
 .categories-grid, .product-grid {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content:flex-end; /* Alinha os itens à esquerda */
+    gap: 20px;
+    justify-content:space-evenly; /* Alinha os itens à esquerda */
 }
 
 .product-item {

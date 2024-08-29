@@ -9,7 +9,7 @@
 <body>
     <header>
         <input type="text" placeholder="Buscar produtos...">
-        <a href="{{ url_for('cart.view_cart') }}">Carrinho</a>
+        <a href=>Carrinho</a>
     </header>
     <section id="hero">
         <img src="../static/img/xitsnai.png" alt="Promoção Especial">
@@ -21,9 +21,9 @@
         <aside class="sidebar">
             <h2>Opções</h2>
             <ul>
-                <li><a href="#opcao1">Opção 1</a></li>
-                <li><a href="#opcao2">Opção 2</a></li>
-                <li><a href="#opcao3">Opção 3</a></li>
+                <li><a href="{{ url_for('cart.view_cart') }}">Carrinho</a></li>
+                <li><a href="{{ url_for('cart.view_cart') }}">Carrinho</a></li>
+                <li><a href="{{ url_for('account.view_account') }}">Minha Conta</a></li>
                 <!-- Adicione mais opções conforme necessário -->
             </ul>
         </aside>
