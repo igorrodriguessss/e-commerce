@@ -13,7 +13,7 @@ def account():
 
 @account_bp.route('/')
 def view_account():
-    cart = session.get('cart', Account())
-    if isinstance(cart, bytes):
-        cart = pickle.loads(cart)
-    return render_template('cart.html', cart=cart)
+    account = session.get('account', Account())
+    if isinstance(account, bytes):
+        account = pickle.loads(account)
+    return render_template('account.html', account=account)
