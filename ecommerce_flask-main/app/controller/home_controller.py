@@ -4,54 +4,31 @@ from app.model.product import Product
 
 home_bp = Blueprint('home', __name__)
 
-categories = [Category(1, "Ferragens para Construção"), Category(2, "Ferragens para Fixação e Fontagem"), Category(3, "Ferragens para Janelas"), Category(4,"Ferragens para Segurança")]
+categories = [Category(1, "Ferragens para Construção"), Category(2, "Ferragens para Fixação e Fontagem"), Category(3, "Fechaduras"), Category(4,"Colas")]
 products = [
-    Product(1, "Estribo Aço CA 60 4,20mm 7x27cm", 1200.00, 1, "Câmera digital de alta resolução.", [
+    Product(1, "Estribo Aço CA 60 4,20mm 7x27cm", 1200.00, 1, "estribo do bom.", [
         "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
-        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
-        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
-        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg",
-        "https://cdn.leroymerlin.com.br/products/estribo_aco_ca__60_4,20mm_7x27cm_arcelormittal_90350890_0001_600x600.jpg"
+        
     ]),
-    Product(2, "Livro de Python", 45.00, 2, "Aprenda Python facilmente.", [
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
-        "https://blog.geekhunter.com.br/wp-content/uploads/2020/08/livros-de-python.jpg",
+    Product(2, "Parafuso Chip Para Madeira Mdf 5x70 Phillips 100un - Caixa", 15.63, 2, "parafuso supimpa hein!!!", [
+        "https://http2.mlstatic.com/D_NQ_NP_743181-MLB72723772233_112023-O.webp",
+        
     ]),
-    Product(3, "Action Figure Spider-Man", 29.95, 3, "Boneco articulado do Spider-Man, perfeito para colecionadores.", [
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
-        "https://lojaarenagames.com.br/wp-content/uploads/2022/05/Action_Figure_Spider_Man_The_Amazing_Spider_Man_O_Espetacular_Homem_Aranha_Premium_Sega_Goukai_Japan_963801-1.jpg",
+    Product(3, "fechadura", 929.95, 3, "fechadura resistente forjada pelas mãos de habilidosos duendes da Irlanda do Norte", [
+        "https://ferragemfloresta.vtexassets.com/arquivos/ids/169013-500-auto?v=638403402244900000&width=500&height=auto&aspect=true",
+        
     ]),
-    Product(4, "Carro Hot Wheels", 9.99, 3, "Carro Hot Wheels edição limitada, modelo esportivo.", [
+    Product(4, "Carro Hot Wheels", 9.99, 3, "Carro Hot Wheels edição limitada, infiltrado nas fechaduras para trazer alegria ao comprador", [
         "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
-        "https://lojamega.com.br/wp-content/uploads/2023/11/47048-1-1.jpg",
+       
     ]),
-    Product(5, "Mouse Gamer RGB", 35.00, 3, "Mouse gamer com iluminação RGB e alta precisão.", [
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
-        "https://imgs.pontofrio.com.br/1512850183/1xg.jpg",
+    Product(5, "Cola branca 1 kg", 35.00, 4, "cola marca genérica tanana tanana tanana ", [
+        "https://img.kalunga.com.br/fotosdeprodutos/211778.webp",
+        
     ]),
-    Product(6, "Cadeira de Escritório Ergonômica", 189.99, 3, "Cadeira de escritório ergonômica com suporte lombar ajustável.", [
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
-        "https://m.media-amazon.com/images/I/81oF94ROa+L._AC_UF894,1000_QL80_.jpg",
+    Product(6, "Cola instantanea", 189.99, 4, "o programador anterior precisou sair mais cedo pois colou os dedos com essa cola", [
+        "https://img.kalunga.com.br/fotosdeprodutos/210136.webp",
+       
     ])
 ]
 

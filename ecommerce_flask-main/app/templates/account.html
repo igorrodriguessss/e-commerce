@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conta</title>
+    <title>Nossa Loja Online</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <header>
+        <input type="text" placeholder="Buscar produtos">
+        <a href=>Carrinho</a>
+    </header>
+    <section id="hero">
+        <img src="../static/img/xitsnai.png" alt="Promoção Especial">
+        <button>Confie em mim e aperte esse botão, nada irá acontecer com sua família</button>
+    </section>
+    <h1>Esta é sua conta</h1>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Opções</h2>
+            <ul>
+                <li><a href="{{ url_for('cart.view_cart') }}">Carrinho</a></li>
+                <li><a href="{{ url_for('home.home') }}">página principal</a></li>
+                <!-- Adicione mais opções conforme necessário -->
+            </ul>
+        </aside>
 
-    <h1>testando ambiente</h1>
+        
+            
+            
+            
+        </main>
+    </div>
+    
+    <footer>
+        <p>© 2024 Nossa Loja Online. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
